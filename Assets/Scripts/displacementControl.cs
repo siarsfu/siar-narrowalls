@@ -6,10 +6,11 @@ public class displacementControl : MonoBehaviour {
 
     public float displacementAmount;
     public ParticleSystem explosionParticles;
-    MeshRenderer meshRenderer;
+    //MeshRenderer meshRenderer;
+    SkinnedMeshRenderer meshRenderer;
 	// Use this for initialization
 	void Start () {
-        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer = GetComponent<SkinnedMeshRenderer>();
 	}
 	
 	// Update is called once per frame
