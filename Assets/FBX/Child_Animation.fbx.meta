@@ -182,7 +182,12 @@ ModelImporter:
     13700008: Boy_SlowWalk_ANimation_Latest_SLow:Group52045
     13700010: Boy_SlowWalk_ANimation_Latest_SLow:Group52086
     13700012: Boy_SlowWalk_ANimation_Latest_SLow:Group54697
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 0113e78bcd8e0d347babe39fdbf92ec1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

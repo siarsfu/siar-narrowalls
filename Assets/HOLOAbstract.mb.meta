@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 746b3edf43a93064b8171691b864f885
+guid: 5bf0fdecbe74dd945acc924013a76b78
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -189,7 +189,12 @@ ModelImporter:
     4300000: Human_Model
     9500000: //RootNode
     13700000: Human_Model
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: b0bf47a099a667b4ab617d4a62ef4ba9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
