@@ -44,8 +44,6 @@ public class OVRScreenFade : MonoBehaviour
 
     public float currentAlpha { get; private set; }
 
-
-
 	void Awake()
 	{
 		// create the fade material
@@ -101,9 +99,6 @@ public class OVRScreenFade : MonoBehaviour
 
 		SetFadeLevel(0);
 	}
-
-
-
 
     /// <summary>
     /// Start a fade out
@@ -189,24 +184,6 @@ public class OVRScreenFade : MonoBehaviour
 		}
 	}
 
-
-  /*  IEnumerator FadeOut()
-   {
-      float elapsedTime = 0.0f;
-      Color color = fadeColor;
-      color.a = 0f;
-      fadeMaterial.color = color;
-      isFading = true;
-      while (elapsedTime &lt) fadeTime;);
-      {
-         yield return fadeInstruction;
-         elapsedTime += Time.deltaTime;
-         color.a = Mathf.Clamp01(elapsedTime / fadeTime);
-         fadeMaterial.color = color;
-      }
-      isFading = false;
-   }*/
-
     /// <summary>
     /// Update material alpha. UI fade and the current fade due to fade in/out animations (or explicit control)
     /// both affect the fade. (The max is taken)
@@ -224,7 +201,4 @@ public class OVRScreenFade : MonoBehaviour
 			fadeRenderer.enabled = isFading;
         }
     }
-
-
-
 }
