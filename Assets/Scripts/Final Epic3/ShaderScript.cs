@@ -13,7 +13,7 @@ public class ShaderScript : MonoBehaviour {
     void Start () {
         v = 0;
         c = new Color(191, 0, 130);
-        orig = new Color(0, 90, 112);
+        orig = myMaterial.color;
         myMaterial.SetFloat("Vector1_A833BAAD", v);
         rate = 0.001f;
     }

@@ -100,7 +100,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GlowSpeed: 10
+    - _GlowSpeed: 3
     - _GlowTiling: 0.15
     - _Metallic: 0
     - _Mode: 0
@@ -110,8 +110,8 @@ Material:
     - _RimFalloff: 0.1
     - _RimPower: 1.29
     - _RimStrength: 2.5
-    - _ScanSpeed: -0.6
-    - _ScanTiling: 5.7
+    - _ScanSpeed: 0.09
+    - _ScanTiling: 4.58
     - _Scanline: 0
     - _ScanlineSize: 1
     - _ScanlineSpeed: 2

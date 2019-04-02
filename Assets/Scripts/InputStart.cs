@@ -27,7 +27,7 @@ public class InputStart : MonoBehaviour {
 
         {
             //Debug.Log("jksjkd");
-            anim.SetBool("FadeOut", true);
+            anim.SetBool("loading_text", true);
             startSound.Play(0);
            
             StartCoroutine(LoadYourAsyncScene());
