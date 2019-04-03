@@ -23,7 +23,7 @@ public class FinalMainScript : MonoBehaviour {
 	void Update () {
         time += Time.deltaTime;
 
-        if(time > 60 && time < 62)
+        if(time > 35 && time < 37)
         {
             p2.SetActive(true);
         }
