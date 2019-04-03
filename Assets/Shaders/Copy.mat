@@ -100,7 +100,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GlowSpeed: 3
+    - _GlowSpeed: 1.24
     - _GlowTiling: 0.15
     - _Metallic: 0
     - _Mode: 0
@@ -108,10 +108,10 @@ Material:
     - _Parallax: 0.02
     - _RimFallness: 0.236
     - _RimFalloff: 0.1
-    - _RimPower: 1.29
+    - _RimPower: 1.33
     - _RimStrength: 2.5
-    - _ScanSpeed: 0.09
-    - _ScanTiling: 4.58
+    - _ScanSpeed: 0.05
+    - _ScanTiling: 0.49
     - _Scanline: 0
     - _ScanlineSize: 1
     - _ScanlineSpeed: 2
@@ -129,5 +129,5 @@ Material:
     - _Direction: {r: 0, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0.032840855, g: 0.1380466, b: 0.7735849, a: 1}
-    - _RimColor: {r: 0.13510147, g: 0.19971871, b: 0.8679245, a: 1}
+    - _RimColor: {r: 0.259167, g: 0.29049483, b: 0.6037736, a: 1}
     - _ScanlineColor: {r: 1, g: 1, b: 1, a: 1}

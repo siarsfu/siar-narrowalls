@@ -4,25 +4,34 @@ using UnityEngine;
 
 public class ShaderScript : MonoBehaviour {
 
-    public Material myMaterial;
+    public Material myMaterial, hollow, h2,h3,h4,h5,h6;
     public GameObject black;
     public float time;
-    float v, rate;
+    float v, rate, noise,nr,newR;
     Color c, orig;
+
     // Use this for initialization
     void Start () {
         v = 0;
         c = new Color(191, 0, 130);
         orig = myMaterial.color;
         myMaterial.SetFloat("Vector1_A833BAAD", v);
+        myMaterial.SetFloat("Vector1_B1098557", 0);
         rate = 0.001f;
+        noise = 0;
+        nr = .00025f;
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
         time += Time.deltaTime;
+        noise += nr;
         v += rate;
-        
+
+
+        myMaterial.SetFloat("Vector1_B1098557", noise);
+        hollow.SetFloat("_Alpha", v);
 
         //To change Properties on Shaders the name isn't what you call it, it's what unity calls it in its properties
         myMaterial.SetFloat("Vector1_A833BAAD", v);
@@ -33,7 +42,27 @@ public class ShaderScript : MonoBehaviour {
         }
         else
         {
-            myMaterial.SetColor("Color_D4D07BAB", orig);
+            //myMaterial.SetColor("Color_D4D07BAB", orig);
+
+        }
+        if (time > 10)
+        {
+            h5.SetFloat("_Alpha", v);
+
+        }
+        if (time > 60)
+        {
+            h4.SetFloat("_Alpha", v);
+
+        }
+        if (time > 120)
+        {
+            h3.SetFloat("_Alpha", nr);
+
+        }
+        if (time > 180)
+        {
+            h2.SetFloat("_Alpha", nr);
 
         }
 
@@ -45,16 +74,24 @@ public class ShaderScript : MonoBehaviour {
             white.b = 255;
 
             black.GetComponent<MeshRenderer>().material.color = white;
+
+        }
+
+        if(time > 293 && time < 294)
+        {
             black.GetComponent<Black_Screen_Script>().fadeIn();
 
         }
+
+
+
         /*
         if (time >15 &&time < 16)
         {
         //Testing
         }
         */
-        if (time > 283)
+        if (time > 282)
         {
            // rate = rate * rate;
             v += rate;

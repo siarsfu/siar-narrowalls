@@ -8,8 +8,9 @@ public class InputStart : MonoBehaviour {
 
     AudioSource startSound;
 
-    public GameObject gameObject_Animation;
-    Animator anim;
+    public GameObject gameObject_Animation; 
+    public GameObject gameSphere_Animation;
+    Animator anim, sphereAnim;
     //public static AsyncOperation LoadSceneAsync(int sceneBuildIndex, SceneManagement.LoadSceneMode mode = LoadSceneMode.Single);
 
 
@@ -19,6 +20,7 @@ public class InputStart : MonoBehaviour {
        startSound = GetComponent<AudioSource>();
 
        anim = gameObject_Animation.GetComponent<Animator>();
+       sphereAnim = gameSphere_Animation.GetComponent<Animator>();
 
     }
 
@@ -26,8 +28,9 @@ public class InputStart : MonoBehaviour {
         if (OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Space))
 
         {
-            //Debug.Log("jksjkd");
-            anim.SetBool("loading_text", true);
+          // will fade the text and the hologram sphere when spacebar is pushed
+            anim.SetBool("startGame", true);
+            sphereAnim.SetBool("startGame", true);
             startSound.Play(0);
            
             StartCoroutine(LoadYourAsyncScene());
