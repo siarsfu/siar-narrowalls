@@ -11,10 +11,10 @@ public class FinalMainScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        p2.SetActive(false);
-        p4.SetActive(false);
-        p3.SetActive(false);
-        p5.SetActive(false);
+        p2.SetActive(true);
+        p4.SetActive(true);
+        p3.SetActive(true);
+        p5.SetActive(true);
         cube.SetActive(true);
 		
 	}
@@ -22,6 +22,15 @@ public class FinalMainScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time += Time.deltaTime;
+
+        if(time > 25 && time < 26)
+        {
+            p2.SetActive(false);
+            p4.SetActive(false);
+            p3.SetActive(false);
+            p5.SetActive(false);
+            p6.SetActive(false);
+        }
 
         if(time > 35 && time < 37)
         {
@@ -31,11 +40,13 @@ public class FinalMainScript : MonoBehaviour {
         if(time > 120 && time < 122)
         {
             p3.SetActive(true);
+            p6.SetActive(true);
         }
 
         if (time > 180 && time < 182)
         {
             p5.SetActive(true);
+
         }
 
         if (time > 240 && time < 242)

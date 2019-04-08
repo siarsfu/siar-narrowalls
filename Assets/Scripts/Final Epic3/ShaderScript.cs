@@ -9,6 +9,7 @@ public class ShaderScript : MonoBehaviour {
     public float time;
     float v, rate, noise,nr,newR;
     Color c, orig;
+    bool effect=false;
 
     // Use this for initialization
     void Start () {
@@ -18,7 +19,7 @@ public class ShaderScript : MonoBehaviour {
         myMaterial.SetFloat("Vector1_A833BAAD", v);
         myMaterial.SetFloat("Vector1_B1098557", 0);
         rate = 0.001f;
-        noise = 0;
+        noise = 2.5f;
         nr = .00025f;
         
     }
@@ -45,10 +46,23 @@ public class ShaderScript : MonoBehaviour {
             //myMaterial.SetColor("Color_D4D07BAB", orig);
 
         }
-        if (time > 10)
+
+
+        if (time > 24)
+        {
+            h6.SetFloat("_Alpha", v);
+        }
+
+        
+        if (time > 30)
         {
             h5.SetFloat("_Alpha", v);
+            
 
+        }
+        if (time > 45)
+        {
+            hollow.SetFloat("_Alpha", v + .08f);
         }
         if (time > 60)
         {
@@ -91,21 +105,56 @@ public class ShaderScript : MonoBehaviour {
         //Testing
         }
         */
-        if (time > 282)
+
+
+
+
+
+        if (time > 15 && effect == false)
+            {
+            // rate = rate * rate;
+            if (rate < 0)
+            {
+                rate = -rate;
+            }
+            v += rate;
+              
+            Debug.Log("DISSOLVE");
+            if (time > 23)
+            {
+                  effect = true;
+                noise = 0;
+                v = 0;
+            }
+
+        }
+
+            else if ((v > 0.06 || v < -0.20)&&effect==false)
+            {
+                rate = -rate;
+
+            }
+            v += rate;
+
+        if (effect)
         {
-           // rate = rate * rate;
+            if (time > 287)
+            {
+                // rate = rate * rate;
+                if (rate < 0)
+                {
+                    rate = -rate;
+                }
+                v += rate;
+            }
+
+            else if (v > 0.06 || v < -0.20)
+            {
+                rate = -rate;
+
+            }
             v += rate;
         }
-
-       
-
-          else if (v > 0.06 || v < -0.20)
-        {
-            rate = -rate;
-
-        }
-        v += rate;
-
 
 
     }

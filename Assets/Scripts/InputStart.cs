@@ -44,7 +44,7 @@ public class InputStart : MonoBehaviour {
         // This is particularly good for creating loading screens.
         // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
         // a sceneBuildIndex of 1 as shown in Build Settings.
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(7.0f);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(1);
 
             // Wait until the asynchronous scene fully loads
