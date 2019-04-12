@@ -80,7 +80,7 @@ public class ShaderScript : MonoBehaviour {
 
         }
 
-        if (time > 290 && time <291)
+        if (time > 239 && time <240)
         {
             Color white = black.GetComponent<MeshRenderer>().material.color;
             white.r = 255;
@@ -91,7 +91,7 @@ public class ShaderScript : MonoBehaviour {
 
         }
 
-        if(time > 293 && time < 294)
+        if(time > 247 && time < 248)
         {
             black.GetComponent<Black_Screen_Script>().fadeIn();
 

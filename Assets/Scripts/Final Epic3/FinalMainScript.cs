@@ -25,7 +25,7 @@ public class FinalMainScript : MonoBehaviour {
 
         if(time > 25 && time < 26)
         {
-            p2.SetActive(false);
+            //p2.SetActive(false);
             p4.SetActive(false);
             p3.SetActive(false);
             p5.SetActive(false);
@@ -49,13 +49,13 @@ public class FinalMainScript : MonoBehaviour {
 
         }
 
-        if (time > 240 && time < 242)
+        if (time > 200 && time < 202)
         {
             p4.SetActive(true);
         }
 
         //285/286
-        if (time > 285 && time < 286) 
+        if (time > 238 && time < 239) 
         {
             person.SetActive(false);
             p2.SetActive(false);

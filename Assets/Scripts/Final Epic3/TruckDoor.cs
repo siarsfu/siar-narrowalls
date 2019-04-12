@@ -27,13 +27,13 @@ public class TruckDoor : MonoBehaviour {
             //light.SetActive(true);
         }
 
-        if (time > 288)
+        if (time > 242)
         {
        
             light.SetActive(true);
             doorOpen.SetActive(true);
         }
-        if (time>290)
+        if (time>244)
         {
             //time += Time.deltaTime;
             Debug.Log("I'm being called door");

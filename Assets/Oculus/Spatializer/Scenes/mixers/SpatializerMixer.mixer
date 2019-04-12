@@ -26,6 +26,7 @@ AudioMixerController:
     - d2888cde5f80d6a459502fa97245a5ea
     - 80450b6e19eed3c4abfaf184b51b3d30
     - 85e1fa6670d92f44f8b58ba8d4e56203
+    - be75684278065f8479fe2b5c3de91f02
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500003}
@@ -45,6 +46,7 @@ AudioMixerGroupController:
   - {fileID: 243719135718778668}
   - {fileID: 243429442701760790}
   - {fileID: 243526875261849242}
+  - {fileID: 243382332100541476}
   m_Volume: 0658889d5c88bf940b82d78b8d39562e
   m_Pitch: 0d4bed6fb113d6f4089b817171a98447
   m_Effects:
@@ -252,6 +254,23 @@ AudioMixerSnapshotController:
     0d4bed6fb113d6f4089b817171a98447: 1
     d90c93cfc45013545b3760e70f40dd9c: 0.65
   m_TransitionOverrides: {}
+--- !u!243 &243382332100541476
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: arresting_officer2
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: be75684278065f8479fe2b5c3de91f02
+  m_Children: []
+  m_Volume: f74c181bd6fe45f43817cd2002889c7d
+  m_Pitch: a0e2ef71815a1aa47ba605bfb12be168
+  m_Effects:
+  - {fileID: 244800005022415214}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243429442701760790
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -432,6 +451,19 @@ AudioMixerEffectController:
   m_EffectID: 2a7fec5fb908b534eb1be512de4e9381
   m_EffectName: Attenuation
   m_MixLevel: 99a64796187037843a8a1aeaac6fe7f5
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244800005022415214
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5a5aed7c8aadb88479b76d59603a6dd8
+  m_EffectName: Attenuation
+  m_MixLevel: ff825101d75ca394cbca4cf1d9a822b7
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
