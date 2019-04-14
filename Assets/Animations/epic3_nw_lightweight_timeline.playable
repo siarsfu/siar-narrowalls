@@ -4821,7 +4821,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: line23
     m_Version: 1
-  - m_Start: 227.3174791666667
+  - m_Start: 227.82714285714286
     m_ClipIn: 0
     m_Asset: {fileID: 114914133482184184}
     m_Duration: 4.022857142857143
