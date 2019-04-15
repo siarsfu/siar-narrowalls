@@ -85,8 +85,11 @@ public class GestureManager : MonoBehaviour
     }
 
     // Nodding for 'Yes' and shaking for 'No' are the two supposted gestures.
+    //IT IS IMPORTANT TO NOTE THE COMMA HERE
     private Gesture _yes = new Gesture(GestureType.Nod), _no = new Gesture(GestureType.Shake);
 
+
+    //define the floats for private class gesture
     private class Gesture
     {
         float _lastVelocity = 0.0f;
@@ -173,6 +176,7 @@ public class GestureManager : MonoBehaviour
     /// Sends a Gesture Event of the given type out to all listener objects.
     /// </summary>
     /// <param name="gestureType">The gesture type to send out.</param>
+    /// IMPORTANT FOR MAPPING EVENTS AFTER OR BEFORE THIS
     void SendGestureEvent(GestureType gestureType)
     {
         foreach (GestureListener gl in _listeners)
