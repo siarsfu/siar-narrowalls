@@ -22,10 +22,16 @@ public class InputStart : MonoBehaviour {
        anim = gameObject_Animation.GetComponent<Animator>();
        sphereAnim = gameSphere_Animation.GetComponent<Animator>();
 
+        //@ itch.io version
+       startSound.Play(0);
+
     }
 
     private void Update() {
-        if (OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Space))
+
+        // @ Showcase version
+
+        /*if (OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Space))
 
         {
           // will fade the text and the hologram sphere when spacebar is pushed
@@ -35,7 +41,15 @@ public class InputStart : MonoBehaviour {
            
             StartCoroutine(LoadYourAsyncScene());
             
-        }
+        }*/
+
+        //Itch.io version
+        // will fade the text and the hologram sphere when spacebar is pushed
+        anim.SetBool("startGame", true);
+        sphereAnim.SetBool("startGame", true);
+        //startSound.Play(0);
+
+        StartCoroutine(LoadYourAsyncScene());
     }
 
         IEnumerator LoadYourAsyncScene()
