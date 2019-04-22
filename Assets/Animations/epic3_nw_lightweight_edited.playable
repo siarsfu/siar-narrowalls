@@ -3685,6 +3685,34 @@ MonoBehaviour:
   m_Clip: {fileID: 8300000, guid: f96d179bc44abc14eba9a807b3cee3b7, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
+--- !u!114 &114529510633882372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: e69db105784e0534da0bc1ae4711ac60, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+--- !u!114 &114545348812819442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 65c5282182a3d0248a0b6cb9b5ae8c73, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
 --- !u!114 &114551421384316528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5569,20 +5597,6 @@ MonoBehaviour:
     m_DisplayName: line18
     m_Version: 1
   m_Version: 1
---- !u!114 &114818416453882456
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 2846f96e59354f24888b89994ef882c7, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
 --- !u!114 &114833565999136778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5758,10 +5772,10 @@ MonoBehaviour:
   m_Parent: {fileID: 114184937484634244}
   m_Children: []
   m_Clips:
-  - m_Start: 204.88333333333333
+  - m_Start: 204.83289583333334
     m_ClipIn: 0
-    m_Asset: {fileID: 114950607684897220}
-    m_Duration: 18.451375000000013
+    m_Asset: {fileID: 114545348812819442}
+    m_Duration: 18.5018125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114846849127506528}
     m_EaseInDuration: 0
@@ -5770,49 +5784,13 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -5825,12 +5803,12 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: line22
+    m_DisplayName: nw_security2_remix
     m_Version: 1
   - m_Start: 223.33470833333334
     m_ClipIn: 0
-    m_Asset: {fileID: 114818416453882456}
-    m_Duration: 21
+    m_Asset: {fileID: 114529510633882372}
+    m_Duration: 21.037666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114846849127506528}
     m_EaseInDuration: 0
@@ -5894,7 +5872,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: line25
+    m_DisplayName: nw_security_remix
     m_Version: 1
   m_Version: 1
 --- !u!114 &114847491148588050
@@ -6499,20 +6477,6 @@ MonoBehaviour:
     m_DisplayName: line15
     m_Version: 1
   m_Version: 1
---- !u!114 &114950607684897220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: ec6b80fba80fec7459e9024423b76d70, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
 --- !u!114 &114952531055729814
 MonoBehaviour:
   m_ObjectHideFlags: 1
